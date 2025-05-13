@@ -11,7 +11,8 @@
 #ghost {
     width: 30px;
     height: 30px;
-    background-image: url("images/ghost.png");
+    /*background-image: url("images/ghost.png");*/
+    background-color: black;
     background-size: 30px 30px;
     position: relative;
     top: 30px;
@@ -45,16 +46,26 @@
 }
 }
 
-/* #alien {
-    width: 20px;
-    height: 20px;
+#alien {
+    width: 30px;
+    height: 30px;
     position: relative;
-    top: 80px;
-    left: 280px;
+    top: 0px;
+    left: 270px;
 
-    background-image:url("images/alien.png");
-    background-size: 20px 20px; 
-
+    /*background-image:url("images/alien.png"); */
+   background-color: black;
+   background-size: 30px 30px; 
+   animation: move 2s infinite linear;
 }
 
-*/
+@keyframes move {
+  0%{
+    left: 270px;
+  }
+
+  100%{
+    left: -20px;
+  }
+}
+
